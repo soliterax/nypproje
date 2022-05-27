@@ -15,7 +15,7 @@ namespace nypproje.formlar
 {
     public partial class urun_ekle : Form
     {
-        SoliteraxConnection connection = new SoliteraxConnection(SoliteraxConnection.ConnectionType.Access);
+        SoliteraxConnection connection = new SoliteraxConnection(SoliteraxConnection.ConnectionType.SQL);
         ConnectDatabase sql;
         SqlCommand komut;
         public urun_ekle()
@@ -24,7 +24,7 @@ namespace nypproje.formlar
         }
 
         void urungetir() {
-            connection.Connect("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\\nypProjectDatabase.accdb");
+            connection.Connect("Data Source=DESKTOP-1PTCR12\\SQLEXPRESS;Initial Catalog=NYP_PROJE;Persist Security Info=True;User ID=metin;Password=23262326");
             sql = ((ConnectDatabase)connection.GetConnection());
             sql.Connect();
             DataTable data = sql.GetManager().GetData("select * from urunler");

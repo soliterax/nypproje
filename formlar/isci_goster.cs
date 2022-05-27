@@ -23,7 +23,7 @@ namespace nypproje.formlar
             InitializeComponent();
         }
         void iscigetir(){
-            connection.Connect("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\\nypProjectDatabase.accdb");
+            connection.Connect("Data Source=DESKTOP-1PTCR12\\SQLEXPRESS;Initial Catalog=NYP_PROJE;Persist Security Info=True;User ID=metin;Password=23262326");
             sql = ((ConnectDatabase)connection.GetConnection());
             sql.Connect();
             DataTable data = sql.GetManager().GetData("select * from isciler");
