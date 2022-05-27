@@ -1,5 +1,5 @@
 ﻿
-namespace nypproje
+namespace nypproje.formlar
 {
     partial class sepet
     {
@@ -57,6 +57,7 @@ namespace nypproje
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(131, 148);
             this.listBox1.TabIndex = 0;
+            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // listBox2
             // 
@@ -112,6 +113,7 @@ namespace nypproje
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.White;
+            this.button1.BackgroundColor = System.Drawing.Color.White;
             this.button1.BorderColor = System.Drawing.Color.Black;
             this.button1.BorderRadius = 50;
             this.button1.BorderSize = 3;
@@ -124,11 +126,13 @@ namespace nypproje
             this.button1.Size = new System.Drawing.Size(117, 51);
             this.button1.TabIndex = 6;
             this.button1.Text = "Sil";
+            this.button1.TextColor = System.Drawing.Color.Black;
             this.button1.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.White;
+            this.button2.BackgroundColor = System.Drawing.Color.White;
             this.button2.BorderColor = System.Drawing.Color.Black;
             this.button2.BorderRadius = 50;
             this.button2.BorderSize = 3;
@@ -141,12 +145,14 @@ namespace nypproje
             this.button2.Size = new System.Drawing.Size(155, 51);
             this.button2.TabIndex = 7;
             this.button2.Text = "İndirim Yap";
+            this.button2.TextColor = System.Drawing.Color.Black;
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.White;
+            this.button3.BackgroundColor = System.Drawing.Color.White;
             this.button3.BorderColor = System.Drawing.Color.Black;
             this.button3.BorderRadius = 50;
             this.button3.BorderSize = 3;
@@ -159,6 +165,7 @@ namespace nypproje
             this.button3.Size = new System.Drawing.Size(117, 51);
             this.button3.TabIndex = 8;
             this.button3.Text = "Geri";
+            this.button3.TextColor = System.Drawing.Color.Black;
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -195,6 +202,7 @@ namespace nypproje
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.White;
+            this.button4.BackgroundColor = System.Drawing.Color.White;
             this.button4.BorderColor = System.Drawing.Color.Black;
             this.button4.BorderRadius = 50;
             this.button4.BorderSize = 3;
@@ -207,6 +215,7 @@ namespace nypproje
             this.button4.Size = new System.Drawing.Size(117, 51);
             this.button4.TabIndex = 12;
             this.button4.Text = "Ekle";
+            this.button4.TextColor = System.Drawing.Color.Black;
             this.button4.UseVisualStyleBackColor = true;
             // 
             // comboBox1
@@ -243,6 +252,7 @@ namespace nypproje
             // button5
             // 
             this.button5.BackColor = System.Drawing.Color.White;
+            this.button5.BackgroundColor = System.Drawing.Color.White;
             this.button5.BorderColor = System.Drawing.Color.Black;
             this.button5.BorderRadius = 50;
             this.button5.BorderSize = 3;
@@ -255,6 +265,7 @@ namespace nypproje
             this.button5.Size = new System.Drawing.Size(155, 51);
             this.button5.TabIndex = 16;
             this.button5.Text = "İndirim Yapma";
+            this.button5.TextColor = System.Drawing.Color.Black;
             this.button5.UseVisualStyleBackColor = true;
             // 
             // sepet

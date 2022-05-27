@@ -1,5 +1,5 @@
 ﻿
-namespace nypproje
+namespace nypproje.formlar
 {
     partial class mudur_indirim
     {
@@ -52,9 +52,10 @@ namespace nypproje
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button3.Location = new System.Drawing.Point(39, 466);
+            this.button3.Location = new System.Drawing.Point(35, 373);
+            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(132, 42);
+            this.button3.Size = new System.Drawing.Size(117, 34);
             this.button3.TabIndex = 16;
             this.button3.Text = "Geri";
             this.button3.UseVisualStyleBackColor = true;
@@ -63,9 +64,10 @@ namespace nypproje
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.Location = new System.Drawing.Point(81, 368);
+            this.button1.Location = new System.Drawing.Point(72, 294);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(132, 42);
+            this.button1.Size = new System.Drawing.Size(117, 34);
             this.button1.TabIndex = 15;
             this.button1.Text = "Sil";
             this.button1.UseVisualStyleBackColor = true;
@@ -74,9 +76,9 @@ namespace nypproje
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(190, 288);
+            this.label4.Location = new System.Drawing.Point(169, 230);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(39, 29);
+            this.label4.Size = new System.Drawing.Size(34, 25);
             this.label4.TabIndex = 14;
             this.label4.Text = "00";
             // 
@@ -84,9 +86,9 @@ namespace nypproje
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(109, 288);
+            this.label3.Location = new System.Drawing.Point(97, 230);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(75, 29);
+            this.label3.Size = new System.Drawing.Size(64, 25);
             this.label3.TabIndex = 13;
             this.label3.Text = "Tutar:";
             // 
@@ -94,9 +96,9 @@ namespace nypproje
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(276, 17);
+            this.label2.Location = new System.Drawing.Point(245, 14);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(78, 29);
+            this.label2.Size = new System.Drawing.Size(65, 25);
             this.label2.TabIndex = 12;
             this.label2.Text = "Miktar";
             // 
@@ -104,63 +106,70 @@ namespace nypproje
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(102, 17);
+            this.label1.Location = new System.Drawing.Point(91, 14);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(99, 29);
+            this.label1.Size = new System.Drawing.Size(84, 25);
             this.label1.TabIndex = 11;
             this.label1.Text = "Ürün Ad";
             // 
             // listBox2
             // 
             this.listBox2.FormattingEnabled = true;
-            this.listBox2.ItemHeight = 20;
-            this.listBox2.Location = new System.Drawing.Point(246, 49);
+            this.listBox2.ItemHeight = 16;
+            this.listBox2.Location = new System.Drawing.Point(219, 39);
+            this.listBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(147, 184);
+            this.listBox2.Size = new System.Drawing.Size(131, 148);
             this.listBox2.TabIndex = 10;
             // 
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 20;
-            this.listBox1.Location = new System.Drawing.Point(82, 49);
+            this.listBox1.ItemHeight = 16;
+            this.listBox1.Location = new System.Drawing.Point(73, 39);
+            this.listBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(147, 184);
+            this.listBox1.Size = new System.Drawing.Size(131, 148);
             this.listBox1.TabIndex = 9;
+            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // comboBox3
             // 
             this.comboBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(672, 110);
+            this.comboBox3.Location = new System.Drawing.Point(597, 88);
+            this.comboBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(183, 37);
+            this.comboBox3.Size = new System.Drawing.Size(163, 33);
             this.comboBox3.TabIndex = 24;
             // 
             // comboBox2
             // 
             this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(672, 171);
+            this.comboBox2.Location = new System.Drawing.Point(597, 137);
+            this.comboBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(183, 37);
+            this.comboBox2.Size = new System.Drawing.Size(163, 33);
             this.comboBox2.TabIndex = 23;
             // 
             // comboBox1
             // 
             this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(672, 49);
+            this.comboBox1.Location = new System.Drawing.Point(597, 39);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(183, 37);
+            this.comboBox1.Size = new System.Drawing.Size(163, 33);
             this.comboBox1.TabIndex = 22;
             // 
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button4.Location = new System.Drawing.Point(696, 352);
+            this.button4.Location = new System.Drawing.Point(619, 282);
+            this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(132, 42);
+            this.button4.Size = new System.Drawing.Size(117, 34);
             this.button4.TabIndex = 21;
             this.button4.Text = "Ekle";
             this.button4.UseVisualStyleBackColor = true;
@@ -169,9 +178,9 @@ namespace nypproje
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label7.Location = new System.Drawing.Point(534, 54);
+            this.label7.Location = new System.Drawing.Point(475, 43);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(110, 29);
+            this.label7.Size = new System.Drawing.Size(91, 25);
             this.label7.TabIndex = 20;
             this.label7.Text = "Kategori:";
             // 
@@ -179,9 +188,9 @@ namespace nypproje
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label6.Location = new System.Drawing.Point(534, 117);
+            this.label6.Location = new System.Drawing.Point(475, 94);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(109, 29);
+            this.label6.Size = new System.Drawing.Size(91, 25);
             this.label6.TabIndex = 19;
             this.label6.Text = "Ürün adı:";
             // 
@@ -189,18 +198,19 @@ namespace nypproje
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label5.Location = new System.Drawing.Point(560, 173);
+            this.label5.Location = new System.Drawing.Point(498, 138);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(84, 29);
+            this.label5.Size = new System.Drawing.Size(71, 25);
             this.label5.TabIndex = 18;
             this.label5.Text = "Miktar:";
             // 
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button2.Location = new System.Drawing.Point(723, 466);
+            this.button2.Location = new System.Drawing.Point(643, 373);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(176, 42);
+            this.button2.Size = new System.Drawing.Size(156, 34);
             this.button2.TabIndex = 17;
             this.button2.Text = "Tamamla";
             this.button2.UseVisualStyleBackColor = true;
@@ -209,26 +219,27 @@ namespace nypproje
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label8.Location = new System.Drawing.Point(560, 244);
+            this.label8.Location = new System.Drawing.Point(498, 195);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(92, 29);
+            this.label8.Size = new System.Drawing.Size(75, 25);
             this.label8.TabIndex = 26;
             this.label8.Text = "İndirim:";
             // 
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox1.Location = new System.Drawing.Point(672, 238);
+            this.textBox1.Location = new System.Drawing.Point(597, 190);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(183, 35);
+            this.textBox1.Size = new System.Drawing.Size(163, 30);
             this.textBox1.TabIndex = 27;
             // 
             // mudur_indirim
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(979, 544);
+            this.ClientSize = new System.Drawing.Size(870, 435);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.comboBox3);
@@ -247,6 +258,7 @@ namespace nypproje
             this.Controls.Add(this.label1);
             this.Controls.Add(this.listBox2);
             this.Controls.Add(this.listBox1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "mudur_indirim";
             this.Text = "mudur_indirim";
             this.ResumeLayout(false);

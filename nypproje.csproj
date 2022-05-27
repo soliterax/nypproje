@@ -53,34 +53,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="giris.cs">
+    <Compile Include="formlar\giris.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="giris.Designer.cs">
+    <Compile Include="formlar\giris.Designer.cs">
       <DependentUpon>giris.cs</DependentUpon>
     </Compile>
-    <Compile Include="isci_ekle.cs">
+    <Compile Include="formlar\isci_ekle.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="isci_ekle.Designer.cs">
+    <Compile Include="formlar\isci_ekle.Designer.cs">
       <DependentUpon>isci_ekle.cs</DependentUpon>
     </Compile>
-    <Compile Include="isci_goster.cs">
+    <Compile Include="formlar\isci_goster.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="isci_goster.Designer.cs">
+    <Compile Include="formlar\isci_goster.Designer.cs">
       <DependentUpon>isci_goster.cs</DependentUpon>
     </Compile>
-    <Compile Include="mudur.cs">
+    <Compile Include="formlar\mudur.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="mudur.Designer.cs">
+    <Compile Include="formlar\mudur.Designer.cs">
       <DependentUpon>mudur.cs</DependentUpon>
     </Compile>
-    <Compile Include="mudur_indirim.cs">
+    <Compile Include="formlar\mudur_indirim.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="mudur_indirim.Designer.cs">
+    <Compile Include="formlar\mudur_indirim.Designer.cs">
       <DependentUpon>mudur_indirim.cs</DependentUpon>
     </Compile>
     <Compile Include="NYP_PROJEDataSet.Designer.cs">
@@ -88,51 +88,52 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>NYP_PROJEDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="sepet.cs">
+    <Compile Include="formlar\sepet.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="sepet.Designer.cs">
+    <Compile Include="formlar\sepet.Designer.cs">
       <DependentUpon>sepet.cs</DependentUpon>
     </Compile>
-    <Compile Include="sepet_class.cs" />
-    <Compile Include="urun_class.cs" />
-    <Compile Include="urun_ekle.cs">
+    <Compile Include="formlar\urun_ekle.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="urun_ekle.Designer.cs">
+    <Compile Include="formlar\urun_ekle.Designer.cs">
       <DependentUpon>urun_ekle.cs</DependentUpon>
     </Compile>
-    <Compile Include="yardimci.cs">
+    <Compile Include="formlar\yardimci.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="yardimci.Designer.cs">
+    <Compile Include="formlar\yardimci.Designer.cs">
       <DependentUpon>yardimci.cs</DependentUpon>
     </Compile>
-    <Compile Include="LoginControl.cs" />
+    <Compile Include="kontrol\LoginControl.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="giris.resx">
+    <Compile Include="sınıflar\kategori.cs" />
+    <Compile Include="sınıflar\personel.cs" />
+    <Compile Include="sınıflar\urun.cs" />
+    <EmbeddedResource Include="formlar\giris.resx">
       <DependentUpon>giris.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="isci_ekle.resx">
+    <EmbeddedResource Include="formlar\isci_ekle.resx">
       <DependentUpon>isci_ekle.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="isci_goster.resx">
+    <EmbeddedResource Include="formlar\isci_goster.resx">
       <DependentUpon>isci_goster.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="mudur.resx">
+    <EmbeddedResource Include="formlar\mudur.resx">
       <DependentUpon>mudur.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="mudur_indirim.resx">
+    <EmbeddedResource Include="formlar\mudur_indirim.resx">
       <DependentUpon>mudur_indirim.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="sepet.resx">
+    <EmbeddedResource Include="formlar\sepet.resx">
       <DependentUpon>sepet.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="urun_ekle.resx">
+    <EmbeddedResource Include="formlar\urun_ekle.resx">
       <DependentUpon>urun_ekle.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="yardimci.resx">
+    <EmbeddedResource Include="formlar\yardimci.resx">
       <DependentUpon>yardimci.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -171,5 +172,6 @@
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

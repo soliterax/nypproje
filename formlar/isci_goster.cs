@@ -11,12 +11,12 @@ using System.Data.SqlClient;
 using SoliteraxLibrary;
 using SoliteraxLibrary.SQLSystem;
 
-namespace nypproje
+namespace nypproje.formlar
 {
     public partial class isci_goster : Form
     {
-        SoliteraxConnection connection = new SoliteraxConnection(SoliteraxConnection.ConnectionType.SQL);
-        ConnectSQL sql;
+        SoliteraxConnection connection = new SoliteraxConnection(SoliteraxConnection.ConnectionType.Access);
+        ConnectDatabase sql;
         SqlCommand komut;
         public isci_goster()
         {
@@ -24,7 +24,7 @@ namespace nypproje
         }
         void iscigetir(){
             connection.Connect("Data Source=DESKTOP-1PTCR12\\SQLEXPRESS;Initial Catalog=NYP_PROJE;Persist Security Info=True;User ID=metin;Password=23262326");
-            sql = ((ConnectSQL)connection.GetConnection());
+            sql = ((ConnectDatabase)connection.GetConnection());
             sql.Connect();
             DataTable data = sql.GetManager().GetData("select * from isciler");
             dataGridView1.DataSource = data;
@@ -42,6 +42,11 @@ namespace nypproje
             y.Show();
             this.Hide();
             GC.Collect();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

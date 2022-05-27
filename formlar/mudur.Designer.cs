@@ -1,5 +1,5 @@
 ﻿
-namespace nypproje
+namespace nypproje.formlar
 {
     partial class mudur
     {

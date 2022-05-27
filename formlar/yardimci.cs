@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace nypproje
+namespace nypproje.formlar
 {
     public partial class yardimci : Form
     {

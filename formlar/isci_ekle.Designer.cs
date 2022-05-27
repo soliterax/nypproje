@@ -1,5 +1,5 @@
 ﻿
-namespace nypproje
+namespace nypproje.formlar
 {
     partial class isci_ekle
     {
@@ -46,6 +46,8 @@ namespace nypproje
             this.txtid = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.btguncelle = new SoliteraxControlLibrary.CustomButton();
+            this.ch_1 = new System.Windows.Forms.CheckBox();
+            this.ch_2 = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -73,7 +75,7 @@ namespace nypproje
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(12, 177);
+            this.label3.Location = new System.Drawing.Point(7, 216);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(140, 25);
             this.label3.TabIndex = 6;
@@ -83,7 +85,7 @@ namespace nypproje
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(62, 227);
+            this.label4.Location = new System.Drawing.Point(62, 257);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(89, 25);
             this.label4.TabIndex = 7;
@@ -108,14 +110,14 @@ namespace nypproje
             // txttel
             // 
             this.txttel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(170)));
-            this.txttel.Location = new System.Drawing.Point(157, 227);
+            this.txttel.Location = new System.Drawing.Point(157, 251);
             this.txttel.Name = "txttel";
             this.txttel.Size = new System.Drawing.Size(231, 34);
             this.txttel.TabIndex = 12;
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(157, 177);
+            this.dateTimePicker1.Location = new System.Drawing.Point(157, 216);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(231, 22);
             this.dateTimePicker1.TabIndex = 13;
@@ -139,6 +141,7 @@ namespace nypproje
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.White;
+            this.button4.BackgroundColor = System.Drawing.Color.White;
             this.button4.BorderColor = System.Drawing.Color.Black;
             this.button4.BorderRadius = 50;
             this.button4.BorderSize = 3;
@@ -151,12 +154,14 @@ namespace nypproje
             this.button4.Size = new System.Drawing.Size(117, 51);
             this.button4.TabIndex = 18;
             this.button4.Text = "Geri";
+            this.button4.TextColor = System.Drawing.Color.Black;
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // btnsil
             // 
             this.btnsil.BackColor = System.Drawing.Color.White;
+            this.btnsil.BackgroundColor = System.Drawing.Color.White;
             this.btnsil.BorderColor = System.Drawing.Color.Black;
             this.btnsil.BorderRadius = 50;
             this.btnsil.BorderSize = 3;
@@ -169,12 +174,14 @@ namespace nypproje
             this.btnsil.Size = new System.Drawing.Size(152, 67);
             this.btnsil.TabIndex = 16;
             this.btnsil.Text = "Sil";
+            this.btnsil.TextColor = System.Drawing.Color.Black;
             this.btnsil.UseVisualStyleBackColor = true;
             this.btnsil.Click += new System.EventHandler(this.button2_Click);
             // 
             // btnekle
             // 
             this.btnekle.BackColor = System.Drawing.Color.White;
+            this.btnekle.BackgroundColor = System.Drawing.Color.White;
             this.btnekle.BorderColor = System.Drawing.Color.Black;
             this.btnekle.BorderRadius = 50;
             this.btnekle.BorderSize = 3;
@@ -187,6 +194,7 @@ namespace nypproje
             this.btnekle.Size = new System.Drawing.Size(152, 67);
             this.btnekle.TabIndex = 15;
             this.btnekle.Text = "Ekle";
+            this.btnekle.TextColor = System.Drawing.Color.Black;
             this.btnekle.UseVisualStyleBackColor = true;
             this.btnekle.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -222,6 +230,7 @@ namespace nypproje
             // btguncelle
             // 
             this.btguncelle.BackColor = System.Drawing.Color.White;
+            this.btguncelle.BackgroundColor = System.Drawing.Color.White;
             this.btguncelle.BorderColor = System.Drawing.Color.Black;
             this.btguncelle.BorderRadius = 50;
             this.btguncelle.BorderSize = 3;
@@ -234,8 +243,29 @@ namespace nypproje
             this.btguncelle.Size = new System.Drawing.Size(152, 67);
             this.btguncelle.TabIndex = 21;
             this.btguncelle.Text = "Güncelle";
+            this.btguncelle.TextColor = System.Drawing.Color.Black;
             this.btguncelle.UseVisualStyleBackColor = true;
             this.btguncelle.Click += new System.EventHandler(this.btguncelle_Click);
+            // 
+            // ch_1
+            // 
+            this.ch_1.AutoSize = true;
+            this.ch_1.Location = new System.Drawing.Point(157, 175);
+            this.ch_1.Name = "ch_1";
+            this.ch_1.Size = new System.Drawing.Size(82, 21);
+            this.ch_1.TabIndex = 22;
+            this.ch_1.Text = "yardımcı";
+            this.ch_1.UseVisualStyleBackColor = true;
+            // 
+            // ch_2
+            // 
+            this.ch_2.AutoSize = true;
+            this.ch_2.Location = new System.Drawing.Point(290, 175);
+            this.ch_2.Name = "ch_2";
+            this.ch_2.Size = new System.Drawing.Size(74, 21);
+            this.ch_2.TabIndex = 23;
+            this.ch_2.Text = "calısan";
+            this.ch_2.UseVisualStyleBackColor = true;
             // 
             // isci_ekle
             // 
@@ -243,6 +273,8 @@ namespace nypproje
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(984, 541);
+            this.Controls.Add(this.ch_2);
+            this.Controls.Add(this.ch_1);
             this.Controls.Add(this.btguncelle);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtid);
@@ -286,5 +318,7 @@ namespace nypproje
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtid;
         private SoliteraxControlLibrary.CustomButton btguncelle;
+        private System.Windows.Forms.CheckBox ch_2;
+        private System.Windows.Forms.CheckBox ch_1;
     }
 }

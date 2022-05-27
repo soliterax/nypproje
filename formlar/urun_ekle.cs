@@ -11,12 +11,12 @@ using System.Data.SqlClient;
 using SoliteraxLibrary;
 using SoliteraxLibrary.SQLSystem;
 
-namespace nypproje
+namespace nypproje.formlar
 {
     public partial class urun_ekle : Form
     {
         SoliteraxConnection connection = new SoliteraxConnection(SoliteraxConnection.ConnectionType.SQL);
-        ConnectSQL sql;
+        ConnectDatabase sql;
         SqlCommand komut;
         public urun_ekle()
         {
@@ -25,7 +25,7 @@ namespace nypproje
 
         void urungetir() {
             connection.Connect("Data Source=DESKTOP-1PTCR12\\SQLEXPRESS;Initial Catalog=NYP_PROJE;Persist Security Info=True;User ID=metin;Password=23262326");
-            sql = ((ConnectSQL)connection.GetConnection());
+            sql = ((ConnectDatabase)connection.GetConnection());
             sql.Connect();
             DataTable data = sql.GetManager().GetData("select * from urunler");
             dataGridView1.DataSource = data;
@@ -41,7 +41,7 @@ namespace nypproje
         {
             SqlCommand komut = new SqlCommand();
             string sorgu = "INSERT INTO urunler(kategori,urun_ad,urun_miktar,urun_ucret) VALUES (@kategori,@urun_ad,@urun_miktar,@urun_ucret)";
-            sql = ((ConnectSQL)connection.GetConnection());
+            sql = ((ConnectDatabase)connection.GetConnection());
             sql.Connect();
             komut.Parameters.AddWithValue("@kategori", txtkategori.Text);
             komut.Parameters.AddWithValue("@urun_ad", txtad.Text);
@@ -104,6 +104,11 @@ namespace nypproje
                     throw new ArgumentException();
             }
             
+        }
+
+        private void txtkategori_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

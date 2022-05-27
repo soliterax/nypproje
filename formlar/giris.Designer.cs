@@ -1,5 +1,5 @@
 ﻿
-namespace nypproje
+namespace nypproje.formlar
 {
     partial class giris
     {
@@ -72,6 +72,7 @@ namespace nypproje
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.White;
+            this.button1.BackgroundColor = System.Drawing.Color.White;
             this.button1.BorderColor = System.Drawing.Color.Black;
             this.button1.BorderRadius = 50;
             this.button1.BorderSize = 3;
@@ -83,6 +84,7 @@ namespace nypproje
             this.button1.Size = new System.Drawing.Size(179, 63);
             this.button1.TabIndex = 3;
             this.button1.Text = "Giriş";
+            this.button1.TextColor = System.Drawing.Color.Black;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -103,6 +105,7 @@ namespace nypproje
             this.textBox2.Size = new System.Drawing.Size(231, 34);
             this.textBox2.TabIndex = 5;
             this.textBox2.UseSystemPasswordChar = true;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // giris
             // 

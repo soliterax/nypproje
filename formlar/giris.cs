@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace nypproje
+namespace nypproje.formlar
 {
     public partial class giris : Form
     {
@@ -62,6 +62,11 @@ namespace nypproje
                 textBox1.Clear();
                 textBox2.Clear();
             }
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

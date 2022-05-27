@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace nypproje
+namespace nypproje.formlar
 {
     public partial class mudur_indirim : Form
     {
@@ -22,6 +22,11 @@ namespace nypproje
             mudur mudurekran = new mudur();
             mudurekran.Show();
             this.Hide();
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

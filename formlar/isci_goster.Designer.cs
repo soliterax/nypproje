@@ -1,5 +1,5 @@
 ﻿
-namespace nypproje
+namespace nypproje.formlar
 {
     partial class isci_goster
     {
@@ -48,10 +48,12 @@ namespace nypproje
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(960, 395);
             this.dataGridView1.TabIndex = 15;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.White;
+            this.button4.BackgroundColor = System.Drawing.Color.White;
             this.button4.BorderColor = System.Drawing.Color.Black;
             this.button4.BorderRadius = 50;
             this.button4.BorderSize = 3;
@@ -64,6 +66,7 @@ namespace nypproje
             this.button4.Size = new System.Drawing.Size(117, 51);
             this.button4.TabIndex = 19;
             this.button4.Text = "Geri";
+            this.button4.TextColor = System.Drawing.Color.Black;
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 

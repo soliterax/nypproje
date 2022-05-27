@@ -1,5 +1,5 @@
 ﻿
-namespace nypproje
+namespace nypproje.formlar
 {
     partial class urun_ekle
     {
@@ -69,6 +69,7 @@ namespace nypproje
             this.txtkategori.Name = "txtkategori";
             this.txtkategori.Size = new System.Drawing.Size(231, 34);
             this.txtkategori.TabIndex = 18;
+            this.txtkategori.TextChanged += new System.EventHandler(this.txtkategori_TextChanged);
             // 
             // label4
             // 
@@ -129,6 +130,7 @@ namespace nypproje
             // btnsil
             // 
             this.btnsil.BackColor = System.Drawing.Color.White;
+            this.btnsil.BackgroundColor = System.Drawing.Color.White;
             this.btnsil.BorderColor = System.Drawing.Color.Black;
             this.btnsil.BorderRadius = 50;
             this.btnsil.BorderSize = 3;
@@ -141,12 +143,14 @@ namespace nypproje
             this.btnsil.Size = new System.Drawing.Size(152, 86);
             this.btnsil.TabIndex = 24;
             this.btnsil.Text = "Sil";
+            this.btnsil.TextColor = System.Drawing.Color.Black;
             this.btnsil.UseVisualStyleBackColor = true;
             this.btnsil.Click += new System.EventHandler(this.btnsil_Click);
             // 
             // btnekle
             // 
             this.btnekle.BackColor = System.Drawing.Color.White;
+            this.btnekle.BackgroundColor = System.Drawing.Color.White;
             this.btnekle.BorderColor = System.Drawing.Color.Black;
             this.btnekle.BorderRadius = 50;
             this.btnekle.BorderSize = 3;
@@ -159,6 +163,7 @@ namespace nypproje
             this.btnekle.Size = new System.Drawing.Size(152, 86);
             this.btnekle.TabIndex = 23;
             this.btnekle.Text = "Ekle";
+            this.btnekle.TextColor = System.Drawing.Color.Black;
             this.btnekle.UseVisualStyleBackColor = true;
             this.btnekle.Click += new System.EventHandler(this.btnekle_Click);
             // 
@@ -173,6 +178,7 @@ namespace nypproje
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.White;
+            this.button4.BackgroundColor = System.Drawing.Color.White;
             this.button4.BorderColor = System.Drawing.Color.Black;
             this.button4.BorderRadius = 50;
             this.button4.BorderSize = 3;
@@ -185,6 +191,7 @@ namespace nypproje
             this.button4.Size = new System.Drawing.Size(117, 51);
             this.button4.TabIndex = 26;
             this.button4.Text = "Geri";
+            this.button4.TextColor = System.Drawing.Color.Black;
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 

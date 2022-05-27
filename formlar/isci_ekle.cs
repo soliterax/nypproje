@@ -11,12 +11,12 @@ using System.Data.SqlClient;
 using SoliteraxLibrary;
 using SoliteraxLibrary.SQLSystem;
 
-namespace nypproje
+namespace nypproje.formlar
 {
     public partial class isci_ekle : Form
     {
         SoliteraxConnection connection = new SoliteraxConnection(SoliteraxConnection.ConnectionType.SQL);
-        ConnectSQL sql;       
+        ConnectDatabase sql;       
         SqlCommand komut;
         public isci_ekle()
         {
@@ -27,7 +27,7 @@ namespace nypproje
         {
             
             connection.Connect("Data Source=DESKTOP-1PTCR12\\SQLEXPRESS;Initial Catalog=NYP_PROJE;Persist Security Info=True;User ID=metin;Password=23262326");
-            sql = ((ConnectSQL)connection.GetConnection());
+            sql = ((ConnectDatabase)connection.GetConnection());
             sql.Connect();
             DataTable data = sql.GetManager().GetData("select * from isciler");
             dataGridView1.DataSource = data;
@@ -55,7 +55,7 @@ namespace nypproje
         {
             SqlCommand komut = new SqlCommand();
             string sorgu = "INSERT INTO isciler(ad,soyad,telefon,dogum_tarih) VALUES (@ad,@soyad,@telefon,@dogum_tarih)";
-            sql = ((ConnectSQL)connection.GetConnection());
+            sql = ((ConnectDatabase)connection.GetConnection());
             sql.Connect();
             komut.Parameters.AddWithValue("@ad", txtad.Text);
             komut.Parameters.AddWithValue("@soyad", txtsoyad.Text);
@@ -87,7 +87,7 @@ namespace nypproje
             iscigetir();
             GC.Collect();
         }
-        private void dataGridView1_CellEnter(object sender, DataGridViewCellEventArgs e)
+        private void dataGridView1_CellEnter(object sender, DataGridViewCellEventArgs e) //tablo elementleri
         {
             txtid.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
             txtad.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
@@ -107,31 +107,31 @@ namespace nypproje
 
         private void btguncelle_Click(object sender, EventArgs e) // güncelle butonu
         {
-            sql = (ConnectSQL)connection.GetConnection();
+            sql = (ConnectDatabase)connection.GetConnection();
             sql.Connect();
-            sql.GetManager().UpdateData("isciler", new ManageSQL.SQLCondition[]
+            sql.GetManager().UpdateData("isciler", new DatabaseManager.DataCondition[]
             {
-                new ManageSQL.SQLCondition()
+                new DatabaseManager.DataCondition()
                 {
                     title = "ad",
                     value = txtad.Text.ToString(),
                 },
-                new ManageSQL.SQLCondition()
+                new DatabaseManager.DataCondition()
                 {
                     title = "soyad",
                     value = txtsoyad.Text.ToString()
                 },
-                new ManageSQL.SQLCondition()
+                new DatabaseManager.DataCondition()
                 {
                     title = "telefon",
                     value = txttel.Text.ToString()
                 },
-                new ManageSQL.SQLCondition()
+                new DatabaseManager.DataCondition()
                 {
                     title = "dogum_tarih",
                     value = dateTimePicker1.Value
                 }
-            }, new ManageSQL.SQLCondition() { title = "id", value = int.Parse(txtid.Text.ToString()) });
+            }, new DatabaseManager.DataCondition() { title = "id", value = int.Parse(txtid.Text.ToString()) });
             sql.DisConnect();
             iscigetir();
             GC.Collect();
