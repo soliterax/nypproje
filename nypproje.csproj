@@ -14,7 +14,7 @@
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
+    <PlatformTarget>x64</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -33,12 +33,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="SoliteraxControlLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>obj\SoliteraxControlLibrary.dll</HintPath>
+    <Reference Include="SoliteraxControlLibrary">
+      <HintPath>..\SonsuzAlgoritma\SoliteraxControlLibrary\bin\Release\SoliteraxControlLibrary.dll</HintPath>
     </Reference>
     <Reference Include="SoliteraxLibrary">
-      <HintPath>obj\SoliteraxLibrary.dll</HintPath>
+      <HintPath>..\SonsuzAlgoritma\SonsuzAlgoritma\bin\Release\SoliteraxLibrary.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -82,6 +81,11 @@
     </Compile>
     <Compile Include="formlar\mudur_indirim.Designer.cs">
       <DependentUpon>mudur_indirim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="nypProjectDatabaseDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>nypProjectDatabaseDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="NYP_PROJEDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -145,6 +149,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="nypProjectDatabaseDataSet.xsc">
+      <DependentUpon>nypProjectDatabaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="nypProjectDatabaseDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>nypProjectDatabaseDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="nypProjectDatabaseDataSet.xss">
+      <DependentUpon>nypProjectDatabaseDataSet.xsd</DependentUpon>
+    </None>
     <None Include="NYP_PROJEDataSet.xsc">
       <DependentUpon>NYP_PROJEDataSet.xsd</DependentUpon>
     </None>
@@ -172,6 +187,10 @@
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="nypProjectDatabase.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
